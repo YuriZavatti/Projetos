@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sugestão do Chef Shop</title>
+
+</head>
+<body class="disable">
+    
+    <div class="container">
+
+        <header>
+
+            <h1 class="geraltitle">Sugestão do Chef</h1>
+
+            <div class="shopping">
+
+                <img src="image/shopping.svg" alt="shopping bag">
+
+                <span class="quantidadeSacola"> 0 </span>
+
+            </div>
+
+        </header>
+
+        <div class="list">
+
+            <div class="item" id="0">
+
+                <img src="image/1.PNG" alt="Imagem 1" class="imagem">
+                <h2 class="nome">Fiesta do Sudoeste</h2>
+                <h3 class="valor">R$ 100</h3>
+                <button class="button" onclick="addItem('0')">Adicionar a sacola</button>
+
+            </div>
+
+            <div class="item" id="1">
+
+                <img src="image/2.PNG" alt="Imagem 2" class="imagem">
+                <h2 class="nome">Asinhas de Frango</h2>
+                <h3 class="valor">R$ 120</h3>
+                <button class="button" onclick="addItem('1')">Adicionar a sacola</button>
+
+            </div>
+
+            <div class="item" id="2">
+
+                <img src="image/3.PNG" alt="Imagem 3" class="imagem">
+                <h2 class="nome">Salmão com Salada Verde</h2>
+                <h3 class="valor">R$ 120</h3>
+                <button class="button" onclick="addItem('2')">Adicionar a sacola</button>
+
+            </div>
+
+            <div class="item" id="3">
+
+                <img src="image/4.PNG" alt="Imagem 4" class="imagem">
+                <h2 class="nome">Creme de Girassol</h2>
+                <h3 class="valor">R$ 90</h3>
+                <button class="button" onclick="addItem('3')">Adicionar a sacola</button>
+
+            </div>
+
+            <div class="item" id="4">
+
+                <img src="image/5.PNG" alt="Imagem 5" class="imagem">
+                <h2 class="nome">Salada Primavera</h2>
+                <h3 class="valor">R$ 60</h3>
+                <button class="button" onclick="addItem('4')">Adicionar a sacola</button>
+
+            </div>
+
+            <div class="item" id="5">
+
+                <img src="image/6.PNG" alt="Imagem 6" class="imagem">
+                <h2 class="nome">Margherita Mini</h2>
+                <h3 class="valor">R$ 100</h3>
+                <button class="button" onclick="addItem('5')">Adicionar a sacola</button>
+
+            </div>
+
+        </div>
+
+        <p class="direitos">© 2023 Sugestão do Chef</p>
+        
+    </div>
+
+    <div class="closeMenu"></div>
+
+
+    <div class="card">
+        <h1 class="geraltitle">Sacola</h1>
+    
+        <ul class="listCard">
+        </ul>
+
+        <div class="checkOut">
+            <div class="closeShopping">← Voltar</div>
+            <p class="valorFinal total">R$ 0</p>
+            <button class="pagamento"><a href="">Pagamento →</a></button>
+            <button onclick="limpar()" class="limparCarrinho">Limpar</button>
+            <p class="direitos">© 2023 Sugestão do Chef</p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,344 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: #E3E7E8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.container{
+    
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    transition: 0.4s;
+    padding: 100px 50px 10px 50px;
+    z-index: 1;
+
+    transition: 0.4s ease;
+
+}
+
+header{
+
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.geraltitle{
+
+    font-size: 2.3em;
+
+}
+
+header .shopping{
+
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+
+}
+
+header .shopping img{
+
+    width: 40px;
+
+}
+
+header .shopping span{
+
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 22px;
+    left: 23px;
+    padding: 3px 10px;
+
+}
+
+.list{
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin: 50px auto;
+    
+}
+
+.list .item{
+
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #75767653;
+    letter-spacing: 1px;
+
+}
+
+.list .item img{
+
+    padding: 10px 0px;
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.list .item .title{
+
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+.list .item .valor{
+
+    margin: 10px;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+.button{   
+
+    color: black;
+    font-weight: 600;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: color 0.4s;
+
+}
+
+.button:hover{
+
+    color: rgb(133, 133, 133);
+
+}
+
+.container .direitos{
+
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.closeMenu{
+
+    position: fixed;
+    height: 150vh;
+    width: 150vw;
+    z-index: 2;
+    cursor: pointer;    
+    user-select: none;
+
+}
+
+.disable .closeMenu{
+
+    left: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    backdrop-filter: none;
+    
+    transition: background-color 0.4s ease, left 0s ease, backdrop-filter 0.4s;
+    transition-delay: 0s, 0.4s, 0s;
+
+}
+
+.active .closeMenu{
+
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.300);
+    backdrop-filter: blur(15px);
+
+    transition: background-color 0.4s ease, backdrop-filter 0.4s;
+
+}
+
+.card{
+
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 70vw;
+    background-color: #E3E7E8;
+    height: 100vh;
+
+    padding: 5px;
+
+    z-index: 3;
+
+    transition: 0.4s ease;
+
+}
+
+.active .card{
+
+    left: calc(100% - 70vw);
+
+}
+
+.active .container{
+
+    transform: translateX(-200px);
+
+}
+
+.card h1{
+
+    color: #000000;
+    text-align: left;
+    padding: 100px 30px 50px 30px;
+    text-align: center;
+
+}
+
+.listCard {
+
+    overflow-y: auto;
+    height: calc(100vh - 340px);
+
+}
+
+.listCard li{
+
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: black;
+    justify-items: center;
+    align-items: center;
+    letter-spacing: 2px;
+    padding: 20px 5px;
+
+}
+
+.listCard li img{
+
+    width: 80%;
+
+}
+
+.listCard li .nome, .listCard li .valor {
+
+    text-align: center;
+    padding: 0px 5px;
+
+}
+
+.listCard li input{
+
+    background-color: #E3E7E8;
+    border: none;
+    text-decoration: none;
+    width: 30px;
+
+}
+
+.card .checkOut{
+
+    color: black;
+
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+
+    text-decoration: none;
+    border-top: 1px solid black;
+
+    font-weight: 300;
+    font-size: 0.9em;
+
+    cursor: pointer;
+
+}
+
+.card .checkOut .closeShopping{
+
+    border: none;
+    background-color: #E3E7E8;
+    padding: 20px 0px;
+    font-weight: 400;
+    font-size: 1em;
+
+}
+
+.card .checkOut .total{
+
+    border: none;
+    background-color: #E3E7E8;
+    padding: 20px 0px;
+    font-size: 0.9em;
+
+}
+
+.card .checkOut .pagamento{
+
+    border: none;
+    background-color: #E3E7E8;
+    font-size: 1em;
+    
+}
+
+.card .checkOut .pagamento a{
+
+    text-decoration: none;
+    color: black;
+
+}
+
+.card .checkOut .limparCarrinho{
+    
+    border: none;
+    background-color: #E3E7E8;
+    cursor: pointer;
+    font-size: 1em;
+    grid-column: 2;
+    padding-bottom: 10px;
+
+}
+
+.card .checkOut .direitos{
+
+    background-color: #E3E7E8;
+    grid-column: 1 / 4;
+    padding: 20px 0px;
+    font-size: 0.9em;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #E3E7E8;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #bebebe;
+    border-radius: 15px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #9a9a9a;
+}
