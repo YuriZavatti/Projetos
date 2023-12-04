@@ -205,22 +205,54 @@ header .shopping span{
 
     color: #000000;
     text-align: left;
-    padding: 100px 30px 50px 30px;
+    padding: 80px 30px 30px 30px;
     text-align: center;
+
+}
+
+.card .subtitle{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.card .subtitle .limparCarrinho{
+    
+    border: none;
+    background-color: #E3E7E8;
+    cursor: pointer;
+    font-size: 1em;
+    grid-column: 2;
+
+}
+
+.card .subtitle .closeShopping{
+
+    border: none;
+    background-color: #E3E7E8;
+    padding: 20px 0px;
+    font-weight: 400;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 400;
 
 }
 
 .listCard {
 
     overflow-y: auto;
-    height: calc(100vh - 340px);
+    height: calc(100vh - 345px);
 
 }
 
 .listCard li{
 
     display: grid;
-    grid-template-columns: 100px repeat(3, 1fr);
+    grid-template-columns: 120px repeat(2, 1fr);
     color: black;
     justify-items: center;
     align-items: center;
@@ -232,6 +264,7 @@ header .shopping span{
 .listCard li img{
 
     width: 80%;
+    grid-row: 1 / 3;
 
 }
 
@@ -242,12 +275,26 @@ header .shopping span{
 
 }
 
+.listCard li .nome {
+
+    grid-column: 2;
+
+}
+
+.listCard li .valor {
+
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
 .listCard li input{
 
     background-color: #E3E7E8;
     border: none;
     text-decoration: none;
     width: 30px;
+    grid-row: 1/3;
 
 }
 
@@ -259,7 +306,7 @@ header .shopping span{
     bottom: -1px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     text-align: center;
 
     text-decoration: none;
@@ -272,22 +319,12 @@ header .shopping span{
 
 }
 
-.card .checkOut .closeShopping{
-
-    border: none;
-    background-color: #E3E7E8;
-    padding: 20px 0px;
-    font-weight: 400;
-    font-size: 1em;
-
-}
-
 .card .checkOut .total{
 
     border: none;
     background-color: #E3E7E8;
     padding: 20px 0px;
-    font-size: 0.9em;
+    font-size: 1em;
 
 }
 
@@ -303,17 +340,6 @@ header .shopping span{
 
     text-decoration: none;
     color: black;
-
-}
-
-.card .checkOut .limparCarrinho{
-    
-    border: none;
-    background-color: #E3E7E8;
-    cursor: pointer;
-    font-size: 1em;
-    grid-column: 2;
-    padding-bottom: 10px;
 
 }
 
