@@ -368,3 +368,111 @@ header .shopping span{
 ::-webkit-scrollbar-thumb:hover {
     background: #9a9a9a;
 }
+
+/*=============== BREAKPOINTS =============== max 440px min 768px min 992px min 1200px min 1400px*/
+
+@media screen and (max-width: 440px){
+
+    .list{
+
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+}
+
+@media screen and (min-width: 440px){
+
+    .list{
+
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .list{
+
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+
+    .active .card{
+
+        left: calc(100% - 50vw);
+
+    }
+
+    .card{
+
+        width: 50vw;
+
+    }
+
+    .Itens li{
+
+        margin: 0px 2vw;
+
+    }
+
+}
+
+@media screen and (min-width: 992px){
+
+    .list{
+
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 884px;
+        
+    }
+
+    .active .card{
+
+        left: calc(100% - 50vw);
+
+    }
+
+    .card{
+
+        width: 50vw;
+
+    }
+
+    .Itens li{
+
+        margin: 0px 2vw;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    header {
+
+        max-width: 1092px;
+        margin: auto;
+
+    }
+
+    .active .card{
+
+        left: calc(100% - 30vw);
+
+    }
+
+    .card{
+
+        width: 30vw;
+
+    }
+
+    .Itens li{
+
+        margin: 0px 2vw;
+
+    }
+
+}
