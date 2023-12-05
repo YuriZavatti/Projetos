@@ -1,3 +1,12 @@
+// Adicionar background a sacola  -> vai ficar apenas na ideia//
+
+//window.addEventListener("scroll" , function() {
+
+    //let sacola = document.querySelector("#shop");
+    //sacola.classList.toggle('rolagem', window.scrollY > 90)
+    
+//})
+
 // Fechar e abrir o menu //
 
 let openShopping = document.querySelector('.shopping');

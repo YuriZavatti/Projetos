@@ -29,6 +29,7 @@ body{
 header{
 
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr 70px;
     align-items: center;
     justify-content: center;
@@ -43,7 +44,8 @@ header{
 
 header .shopping{
 
-    position: relative;
+    position: fixed;
+    right: 50px;
     text-align: right;
     cursor: pointer;
 
@@ -59,14 +61,14 @@ header .shopping span{
 
     background-color: red;
     border-radius: 50%;
-    display: flex;
+    display: fixed;
     justify-content: center;
     align-items: center;
     color: white;
     position: absolute;
-    top: 22px;
-    left: 23px;
-    padding: 3px 10px;
+    top: 25px;
+    left: -5px;
+    padding: 3px 9px;
 
 }
 
@@ -472,6 +474,44 @@ header .shopping span{
     .Itens li{
 
         margin: 0px 2vw;
+
+    }
+
+    header .shopping{
+
+        margin-right: calc((100vw - 1200px)/2);
+
+    }
+
+}
+
+@media screen and (max-height: 540px){
+
+    .card h1{
+
+        padding: 30px;
+    
+    }
+
+    .listCard {
+
+        height: calc(100vh - 295px);
+
+    }
+
+}
+
+@media screen and (max-height: 420px){
+
+    .card h1{
+
+        display: none;
+
+    }
+
+    .listCard {
+
+        height: calc(100vh - 185px);
 
     }
 
